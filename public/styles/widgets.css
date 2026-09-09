@@ -1,0 +1,47 @@
+/* ============================================
+   SEGUROS DE SALUD Y VIDA — WIDGETS CSS
+   Archivo único, acumulativo. Cada widget nuevo
+   se agrega al final. Nunca se borra lo anterior.
+   ============================================ */
+
+/* ===== Widget Hero (Sección 1) ===== */
+#ssv-widget-hero,
+#ssv-widget-hero * { box-sizing: border-box; }
+#ssv-widget-hero { width: 100%; margin: 0; padding: 0; background: #ffffff; color: #071a49; font-family: Arial, sans-serif; overflow: hidden; }
+#ssv-widget-hero a { color: inherit; text-decoration: none; }
+#ssv-widget-hero .ssv-hero-inner { width: 100%; max-width: 1200px; min-height: 540px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; }
+#ssv-widget-hero .ssv-hero-copy { display: flex; flex-direction: column; justify-content: center; padding: 70px 48px; }
+#ssv-widget-hero .ssv-eyebrow { margin: 0 0 20px; color: #0076df; font-size: 11px; letter-spacing: .28em; line-height: 1.5; text-transform: uppercase; }
+#ssv-widget-hero h1 { max-width: 530px; margin: 0; color: #071a49; font-size: 50px; font-weight: 300; line-height: 1.08; letter-spacing: -.04em; }
+#ssv-widget-hero h1 span { color: #0076df; }
+#ssv-widget-hero .ssv-description { max-width: 475px; margin: 24px 0 32px; color: #5f6368; font-size: 17px; line-height: 1.65; }
+#ssv-widget-hero .ssv-actions { display: flex; align-items: center; gap: 24px; flex-wrap: wrap; }
+#ssv-widget-hero .ssv-primary { display: inline-flex; align-items: center; gap: 10px; padding: 15px 24px; border-radius: 999px; background: #0076df; color: #ffffff; font-size: 14px; font-weight: 600; }
+#ssv-widget-hero .ssv-secondary { display: inline-flex; align-items: center; gap: 8px; color: #0076df; font-size: 14px; font-weight: 600; border: 2px solid #0076df; padding: 12px 20px; border-radius: 999px; }
+#ssv-widget-hero .ssv-hero-photo-wrap { margin: 0; min-height: 540px; height: 100%; border-radius: 24px; overflow: hidden; background-color: #edf6fb; }
+#ssv-widget-hero .ssv-hero-photo { width: 100%; height: 100%; min-height: 540px; object-fit: cover; object-position: center 30%; display: block; }
+@media (max-width: 800px) {
+  #ssv-widget-hero .ssv-hero-inner { display: block; min-height: 0; }
+  #ssv-widget-hero .ssv-hero-copy { padding: 58px 20px 46px; }
+  #ssv-widget-hero h1 { font-size: 42px; }
+  #ssv-widget-hero .ssv-hero-photo-wrap { min-height: 360px; }
+  #ssv-widget-hero .ssv-hero-photo { min-height: 360px; }
+}
+
+/* ===== Widget 03 — Soluciones (Sección 2) ===== */
+#ssv-widget-03{--blue:#0076DF;--navy:#071A49;--muted:#5F6368;--line:#E5E7EB;background:#fff;color:var(--navy);font-family:Lato,Arial,sans-serif;padding:0 20px}
+#ssv-widget-03 *{box-sizing:border-box}
+#ssv-widget-03 .ssv03-wrap{max-width:1200px;margin:0 auto;padding:56px 0 44px}
+#ssv-widget-03 .ssv03-kicker{margin:0 0 12px;color:var(--blue);font-size:12px;font-weight:500;letter-spacing:.25em;text-transform:uppercase}
+#ssv-widget-03 h2{margin:0;font-size:38px;line-height:1.12;font-weight:400;letter-spacing:-.025em}
+#ssv-widget-03 .ssv03-intro{margin:10px 0 30px;color:var(--muted);font-size:17px;line-height:1.5}
+#ssv-widget-03 .ssv03-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:32px}
+#ssv-widget-03 .ssv03-card{overflow:hidden;border:1px solid var(--line);border-radius:24px;background:#fff}
+#ssv-widget-03 .ssv03-image{height:210px;width:100%;object-fit:cover;display:block}
+#ssv-widget-03 .ssv03-body{padding:30px 32px 32px}
+#ssv-widget-03 .ssv03-icon{width:44px;height:44px;display:grid;place-items:center;margin-top:-52px;margin-bottom:18px;border-radius:50%;background:#fff;color:var(--blue);position:relative}
+#ssv-widget-03 .ssv03-icon svg{width:28px;height:28px}
+#ssv-widget-03 h3{margin:0 0 8px;font-size:21px;line-height:1.25;font-weight:500}
+#ssv-widget-03 .ssv03-card p{min-height:48px;margin:0 0 18px;color:var(--muted);font-size:17px;line-height:1.5}
+#ssv-widget-03 .ssv03-more{color:var(--blue);font-size:15px;font-weight:500;text-decoration:none}
+@media(max-width:700px){#ssv-widget-03{padding:0 20px}#ssv-widget-03 .ssv03-grid{grid-template-columns:1fr;gap:24px}#ssv-widget-03 .ssv03-wrap{padding-bottom:40px}#ssv-widget-03 h2{font-size:32px}#ssv-widget-03 .ssv03-body{padding:24px}}
