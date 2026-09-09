@@ -10,7 +10,7 @@
 #ssv-widget-hero { width: 100%; margin: 0; padding: 0; background: #ffffff; color: #071a49; font-family: Arial, sans-serif; overflow: hidden; }
 #ssv-widget-hero a { color: inherit; text-decoration: none; }
 #ssv-widget-hero .ssv-hero-inner { width: 100%; max-width: 1200px; min-height: 540px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; }
-#ssv-widget-hero .ssv-hero-copy { display: flex; flex-direction: column; justify-content: center; padding: 70px 48px; }
+#ssv-widget-hero .ssv-hero-copy { display: flex; flex-direction: column; justify-content: center; padding: 0 48px; }
 #ssv-widget-hero .ssv-eyebrow { margin: 0 0 20px; color: #0076df; font-size: 11px; letter-spacing: .28em; line-height: 1.5; text-transform: uppercase; }
 #ssv-widget-hero h1 { max-width: 530px; margin: 0; color: #071a49; font-size: 50px; font-weight: 300; line-height: 1.08; letter-spacing: -.04em; }
 #ssv-widget-hero h1 span { color: #0076df; }
@@ -22,7 +22,7 @@
 #ssv-widget-hero .ssv-hero-photo { width: 100%; height: 100%; min-height: 540px; object-fit: cover; object-position: center 30%; display: block; }
 @media (max-width: 800px) {
   #ssv-widget-hero .ssv-hero-inner { display: block; min-height: 0; }
-  #ssv-widget-hero .ssv-hero-copy { padding: 58px 20px 46px; }
+  #ssv-widget-hero .ssv-hero-copy { padding: 0 20px; }
   #ssv-widget-hero h1 { font-size: 42px; }
   #ssv-widget-hero .ssv-hero-photo-wrap { min-height: 360px; }
   #ssv-widget-hero .ssv-hero-photo { min-height: 360px; }
