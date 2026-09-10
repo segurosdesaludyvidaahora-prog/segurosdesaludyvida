@@ -194,3 +194,28 @@
 .ssv-wa-qr img{width:96px;height:96px;border-radius:0;border:none;display:block !important;margin:0 !important}
 .ssv-wa-qr span{font-size:13px;font-weight:400;color:#5F6368;max-width:170px;line-height:1.35;text-align:left !important}
 @media(min-width:701px){.ssv-wa-qr{display:flex !important}#ssv-widget-hero .ssv-secondary{display:none !important}#ssv-widget-04 .ssv04-more{display:none !important}#ssv-widget-06 .ssv06-cta-btn{display:none !important}}
+
+/* ===== Widget 09 — Tres Universos (Familia / Empresa / Tu Futuro) ===== */
+#ssv-widget-09{--blue:#0076DF;--navy:#071A49;--muted:#5F6368;--line:#E5E7EB;box-sizing:border-box;background:#fff;color:var(--navy);font-family:'Lato',Arial,sans-serif;padding:0 20px !important;margin:0 !important;width:100% !important;text-align:left !important}
+#ssv-widget-09 *{box-sizing:border-box}
+#ssv-widget-09 .ssv09-wrap{max-width:1200px;margin:0 auto !important;padding:32px 0 !important;text-align:left !important}
+#ssv-widget-09 .ssv09-kicker{margin:0 0 12px !important;color:var(--blue);font-size:12px;font-weight:500;letter-spacing:.25em;text-transform:uppercase;text-align:left !important}
+#ssv-widget-09 h2{margin:0 !important;font-size:38px;line-height:1.12;font-weight:400;letter-spacing:-.025em;text-align:left !important}
+#ssv-widget-09 .ssv09-intro{max-width:650px;margin:10px 0 30px !important;color:var(--muted);font-size:17px;line-height:1.5;text-align:left !important}
+#ssv-widget-09 .ssv09-grid{display:grid !important;grid-template-columns:repeat(3,1fr) !important;gap:24px}
+#ssv-widget-09 .ssv09-card{overflow:hidden;border:1px solid var(--line);border-radius:24px;background:#fff;text-align:left !important;margin:0 !important}
+#ssv-widget-09 .ssv09-image{height:240px;width:100% !important;object-fit:cover;display:block !important;margin:0 !important}
+#ssv-widget-09 .ssv09-body{padding:32px !important;text-align:left !important}
+#ssv-widget-09 .ssv09-label{display:inline-block;margin:0 0 14px !important;color:var(--blue);font-size:12px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;text-align:left !important}
+#ssv-widget-09 h3{margin:0 0 10px !important;font-size:24px;line-height:1.2;font-weight:400;letter-spacing:-.02em;text-align:left !important}
+#ssv-widget-09 .ssv09-body>p{margin:0 0 20px !important;color:var(--muted);font-size:16px;line-height:1.5;text-align:left !important}
+#ssv-widget-09 .ssv09-list{display:flex !important;flex-direction:column !important;gap:10px;margin:0 0 24px !important;padding:0 !important;list-style:none !important}
+#ssv-widget-09 .ssv09-list li{display:flex !important;align-items:center !important;gap:10px;color:var(--navy);font-size:15px;text-align:left !important;margin:0 !important}
+#ssv-widget-09 .ssv09-list svg{flex:0 0 auto;width:18px;height:18px;color:var(--blue)}
+#ssv-widget-09 .ssv09-actions{display:flex !important;flex-wrap:wrap;gap:12px}
+#ssv-widget-09 .ssv09-cta-primary{display:inline-flex;align-items:center;justify-content:center;gap:9px;border-radius:999px;background:var(--blue);color:#fff !important;padding:14px 18px;font-size:15px;font-weight:700;text-decoration:none !important;flex:1 1 0;text-align:center}
+#ssv-widget-09 .ssv09-cta-secondary{display:inline-flex;align-items:center;justify-content:center;gap:9px;border-radius:999px;background:#fff;color:var(--blue) !important;border:2px solid var(--blue);padding:12px 16px;font-size:15px;font-weight:700;text-decoration:none !important;flex:1 1 0;text-align:center}
+#ssv-widget-09 .ssv09-cta-primary span,#ssv-widget-09 .ssv09-cta-secondary span{font-size:20px;line-height:1;font-weight:400}
+@media(max-width:900px){#ssv-widget-09 .ssv09-grid{grid-template-columns:1fr !important}}
+@media(max-width:480px){#ssv-widget-09 .ssv09-actions{flex-direction:column !important;align-items:stretch !important}#ssv-widget-09 .ssv09-cta-primary,#ssv-widget-09 .ssv09-cta-secondary{justify-content:center !important}}
+@media(max-width:700px){#ssv-widget-09{padding:0 20px !important}#ssv-widget-09 .ssv09-wrap{padding:20px 0 !important}#ssv-widget-09 h2{font-size:28px !important}#ssv-widget-09 .ssv09-body{padding:24px !important}#ssv-widget-09 h3{font-size:21px}}
