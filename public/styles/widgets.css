@@ -191,7 +191,7 @@
    no a las tarjetas de 6 Puertas/Autogestión, que son temporales hasta que
    exista el Autoservicio. */
 .ssv-wa-qr{display:none !important;align-items:center !important;gap:12px;margin:0 !important}
-.ssv-wa-qr img{width:96px;height:96px;border-radius:12px;border:1px solid #E5E7EB;display:block !important;margin:0 !important}
+.ssv-wa-qr img{width:96px;height:96px;border-radius:0;border:none;display:block !important;margin:0 !important}
 .ssv-wa-qr span{font-size:13px;font-weight:600;color:#5F6368;max-width:170px;line-height:1.35;text-align:left !important}
 /* NOTA: la regla que oculta los botones en desktop (.ssv-secondary, .ssv04-more, .ssv06-cta-btn)
    se activa más abajo, agregada solo DESPUÉS de que el HTML con el QR ya esté aprobado y pegado
