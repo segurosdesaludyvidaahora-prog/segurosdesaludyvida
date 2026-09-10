@@ -60,7 +60,7 @@
 @media(max-width:700px){#ssv-widget-02{padding:0 20px !important}#ssv-widget-02 .ssv02-wrap{padding:28px 0 !important}#ssv-widget-02 .ssv02-grid{grid-template-columns:1fr !important;gap:20px}#ssv-widget-02 h2{font-size:28px !important}#ssv-widget-02 .ssv02-body{padding:22px !important}#ssv-widget-02 .ssv02-image{height:200px}}
 
 /* ===== Widget 03 — Educación / Conceptos (Sección 3) ===== */
-#ssv-widget-03{--blue:#0076DF;--kicker:#55779D;--navy:#071A49;--muted:#5F6368;--line:#E5E7EB;box-sizing:border-box;background:#fff;color:var(--navy);font-family:'Lato',Arial,sans-serif;padding:0 20px !important;margin:0 !important;width:100% !important;text-align:left !important}
+#ssv-widget-03{--blue:#0076DF;--kicker:#55779D;--navy:#071A49;--muted:#5F6368;--line:#E1EAF3;box-sizing:border-box;background:#F5F9FD !important;color:var(--navy);font-family:'Lato',Arial,sans-serif;padding:0 20px !important;margin:0 !important;width:100% !important;text-align:left !important}
 #ssv-widget-03 *{box-sizing:border-box}
 #ssv-widget-03 .ssv03-wrap{max-width:1200px;margin:0 auto !important;padding:32px 0 !important;text-align:left !important}
 #ssv-widget-03 .ssv03-kicker{margin:0 0 12px !important;color:var(--kicker);font-size:12px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;text-align:left !important}
