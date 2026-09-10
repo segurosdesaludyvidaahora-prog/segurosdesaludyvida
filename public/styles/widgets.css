@@ -92,3 +92,29 @@
 #ssv-widget-04 .ssv04-photo-wrap{border-radius:24px;overflow:hidden;background:#F7F8FA;margin:0 !important}
 #ssv-widget-04 .ssv04-photo{display:block !important;width:100% !important;height:auto;max-height:560px;object-fit:cover;object-position:center top;margin:0 !important}
 @media(max-width:760px){#ssv-widget-04 .ssv04-wrap{grid-template-columns:1fr !important;gap:28px !important;padding:28px 0 !important}#ssv-widget-04 h2{font-size:30px !important}#ssv-widget-04 .ssv04-photo-wrap{order:-1}}
+
+/* ===== Widget 05 — Google Reviews / Testimonios (Sección 5) ===== */
+#ssv-widget-05{box-sizing:border-box;background:#fff;color:#071A49;font-family:'Lato',Arial,sans-serif;padding:0 20px !important;margin:0 !important;width:100% !important;text-align:left !important}
+#ssv-widget-05 *{box-sizing:border-box}
+#ssv-widget-05 .ssv05-wrap{max-width:1200px;margin:0 auto !important;padding:32px 0 !important;text-align:left !important}
+#ssv-widget-05 .ssv05-kicker{margin:0 0 12px !important;color:#55779D;font-size:12px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;text-align:left !important}
+#ssv-widget-05 h2{max-width:650px;margin:0 0 24px !important;font-size:38px;line-height:1.14;font-weight:400;letter-spacing:-.025em;text-align:left !important}
+#ssv-widget-05 .ssv05-summary{display:flex !important;align-items:center !important;justify-content:space-between !important;flex-wrap:wrap;gap:16px;background:#F7F9FB;border-radius:20px;padding:20px 24px !important;margin:0 0 24px !important}
+#ssv-widget-05 .ssv05-summary-left{display:flex !important;align-items:center !important;gap:14px}
+#ssv-widget-05 .ssv05-glogo{display:flex !important;align-items:center !important;gap:8px;font-size:20px;font-weight:600;color:#5F6368}
+#ssv-widget-05 .ssv05-glogo svg{width:24px;height:24px}
+#ssv-widget-05 .ssv05-score{font-size:20px;font-weight:700;color:#071A49}
+#ssv-widget-05 .ssv05-stars{color:#FBBC05;font-size:16px;letter-spacing:2px}
+#ssv-widget-05 .ssv05-count{color:#5F6368;font-size:14px}
+#ssv-widget-05 .ssv05-write{display:inline-flex;align-items:center;gap:8px;border-radius:999px;background:#0076DF;color:#fff !important;padding:12px 22px;font-size:14px;font-weight:700;text-decoration:none;flex:0 0 auto}
+#ssv-widget-05 .ssv05-grid{display:grid !important;grid-template-columns:repeat(3,1fr) !important;gap:20px}
+#ssv-widget-05 .ssv05-card{border:1px solid #E5E7EB;border-radius:20px;padding:22px !important;background:#fff;text-align:left !important;margin:0 !important}
+#ssv-widget-05 .ssv05-card-head{display:flex !important;align-items:center !important;gap:12px;margin:0 0 12px !important}
+#ssv-widget-05 .ssv05-avatar{width:40px;height:40px;border-radius:50%;display:flex !important;align-items:center !important;justify-content:center !important;color:#fff;font-size:16px;font-weight:700;flex:0 0 auto}
+#ssv-widget-05 .ssv05-card-name{font-size:15px;font-weight:700;color:#071A49;margin:0 !important}
+#ssv-widget-05 .ssv05-card-stars{color:#FBBC05;font-size:13px;margin:2px 0 0 !important}
+#ssv-widget-05 .ssv05-card p{margin:0 0 14px !important;color:#3C4043;font-size:15px;line-height:1.5;text-align:left !important}
+#ssv-widget-05 .ssv05-card-foot{display:flex !important;align-items:center !important;gap:6px;color:#5F6368;font-size:12px}
+#ssv-widget-05 .ssv05-card-foot svg{width:14px;height:14px}
+@media(max-width:900px){#ssv-widget-05 .ssv05-grid{grid-template-columns:1fr !important}}
+@media(max-width:700px){#ssv-widget-05 .ssv05-wrap{padding:28px 0 !important}#ssv-widget-05 h2{font-size:28px !important}#ssv-widget-05 .ssv05-summary{padding:18px !important}}
