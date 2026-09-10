@@ -32,7 +32,7 @@
 #ssv-widget-hero .ssv-hero-photo { width: 100% !important; height: 100%; min-height: 540px; object-fit: cover; object-position: center 30%; display: block !important; }
 @media (max-width: 800px) {
   #ssv-widget-hero .ssv-hero-inner { display: block !important; min-height: 0; }
-  #ssv-widget-hero .ssv-hero-copy { padding: 32px 20px 28px !important; align-items: flex-start !important; }
+  #ssv-widget-hero .ssv-hero-copy { padding: 20px 20px 20px !important; align-items: flex-start !important; }
   #ssv-widget-hero h1 { font-size: 36px !important; }
   #ssv-widget-hero .ssv-actions { flex-direction: column !important; align-items: stretch !important; }
   #ssv-widget-hero .ssv-primary,
@@ -57,7 +57,7 @@
 #ssv-widget-02 .ssv02-card p{min-height:48px;margin:0 0 16px !important;color:var(--muted);font-size:16px;line-height:1.5;text-align:left !important}
 #ssv-widget-02 .ssv02-more{color:var(--blue);font-size:15px;font-weight:500;text-decoration:none;text-align:left !important}
 @media(max-width:900px){#ssv-widget-02 .ssv02-grid{grid-template-columns:repeat(2,1fr) !important}}
-@media(max-width:700px){#ssv-widget-02{padding:0 20px !important}#ssv-widget-02 .ssv02-wrap{padding:28px 0 !important}#ssv-widget-02 .ssv02-grid{grid-template-columns:1fr !important;gap:20px}#ssv-widget-02 h2{font-size:28px !important}#ssv-widget-02 .ssv02-body{padding:22px !important}#ssv-widget-02 .ssv02-image{height:200px}}
+@media(max-width:700px){#ssv-widget-02{padding:0 20px !important}#ssv-widget-02 .ssv02-wrap{padding:20px 0 !important}#ssv-widget-02 .ssv02-grid{grid-template-columns:1fr !important;gap:20px}#ssv-widget-02 h2{font-size:28px !important}#ssv-widget-02 .ssv02-body{padding:22px !important}#ssv-widget-02 .ssv02-image{height:200px}}
 
 /* ===== Widget 03 — Educación / Conceptos (Sección 3) ===== */
 #ssv-widget-03{--blue:#0076DF;--kicker:#55779D;--navy:#071A49;--muted:#5F6368;--line:#E1EAF3;box-sizing:border-box;background:#F5F9FD !important;color:var(--navy);font-family:'Lato',Arial,sans-serif;padding:0 20px !important;margin:0 !important;width:100% !important;text-align:left !important}
@@ -77,7 +77,7 @@
 #ssv-widget-03 .ssv03-more{display:inline-flex;align-items:center;gap:8px;color:var(--blue);font-size:15px;font-weight:700;text-decoration:none;text-align:left !important}
 #ssv-widget-03 .ssv03-more span{font-size:20px;font-weight:400}
 @media(max-width:900px){#ssv-widget-03 .ssv03-grid{grid-template-columns:repeat(2,1fr) !important}}
-@media(max-width:700px){#ssv-widget-03 .ssv03-wrap{padding:28px 0 !important}#ssv-widget-03 .ssv03-grid{grid-template-columns:1fr !important;gap:20px}#ssv-widget-03 h2{font-size:28px !important}#ssv-widget-03 .ssv03-body{padding:22px !important}}
+@media(max-width:700px){#ssv-widget-03 .ssv03-wrap{padding:20px 0 !important}#ssv-widget-03 .ssv03-grid{grid-template-columns:1fr !important;gap:20px}#ssv-widget-03 h2{font-size:28px !important}#ssv-widget-03 .ssv03-body{padding:22px !important}}
 
 /* ===== Widget 04 — Lorena / Tecnología + Persona (Sección 4) ===== */
 #ssv-widget-04{box-sizing:border-box;background:#fff;color:#071A49;font-family:'Lato',Arial,sans-serif;padding:0 20px !important;margin:0 !important;width:100% !important;text-align:left !important}
@@ -91,7 +91,7 @@
 #ssv-widget-04 .ssv04-more span{font-size:20px;line-height:1;font-weight:400}
 #ssv-widget-04 .ssv04-photo-wrap{border-radius:24px;overflow:hidden;background:#F7F8FA;margin:0 !important}
 #ssv-widget-04 .ssv04-photo{display:block !important;width:100% !important;height:auto;max-height:560px;object-fit:cover;object-position:center top;margin:0 !important}
-@media(max-width:760px){#ssv-widget-04 .ssv04-wrap{grid-template-columns:1fr !important;gap:28px !important;padding:28px 0 !important}#ssv-widget-04 h2{font-size:30px !important}#ssv-widget-04 .ssv04-photo-wrap{order:-1}}
+@media(max-width:760px){#ssv-widget-04 .ssv04-wrap{grid-template-columns:1fr !important;gap:28px !important;padding:20px 0 !important}#ssv-widget-04 h2{font-size:30px !important}#ssv-widget-04 .ssv04-photo-wrap{order:-1}}
 
 /* ===== Widget 05 — Google Reviews / Testimonios (Sección 5) ===== */
 #ssv-widget-05{box-sizing:border-box;background:#fff;color:#071A49;font-family:'Lato',Arial,sans-serif;padding:0 20px !important;margin:0 !important;width:100% !important;text-align:left !important}
@@ -117,7 +117,7 @@
 #ssv-widget-05 .ssv05-card-foot{display:flex !important;align-items:center !important;gap:6px;color:#5F6368;font-size:12px}
 #ssv-widget-05 .ssv05-card-foot svg{width:14px;height:14px}
 @media(max-width:900px){#ssv-widget-05 .ssv05-grid{grid-template-columns:1fr !important}}
-@media(max-width:700px){#ssv-widget-05 .ssv05-wrap{padding:28px 0 !important}#ssv-widget-05 h2{font-size:28px !important}#ssv-widget-05 .ssv05-summary{padding:18px !important}}
+@media(max-width:700px){#ssv-widget-05 .ssv05-wrap{padding:20px 0 !important}#ssv-widget-05 h2{font-size:28px !important}#ssv-widget-05 .ssv05-summary{padding:18px !important}}
 
 /* ===== Widget 06 — FAQ (Sección 6) ===== */
 #ssv-widget-06{box-sizing:border-box;background:#fff;color:#071A49;font-family:'Lato',Arial,sans-serif;padding:0 20px !important;margin:0 !important;width:100% !important;text-align:left !important}
@@ -141,7 +141,7 @@
 #ssv-widget-06 .ssv06-item[open] .ssv06-icon{transform:rotate(45deg)}
 #ssv-widget-06 .ssv06-item p{margin:0 !important;padding:0 22px 20px !important;color:#5F6368;font-size:15px;line-height:1.6;text-align:left !important}
 @media(max-width:900px){#ssv-widget-06 .ssv06-grid{grid-template-columns:1fr !important}}
-@media(max-width:700px){#ssv-widget-06 .ssv06-wrap{padding:28px 0 !important}#ssv-widget-06 h2{font-size:28px !important;max-width:100%}#ssv-widget-06 .ssv06-item summary{font-size:15px;padding:16px 18px !important}}
+@media(max-width:700px){#ssv-widget-06 .ssv06-wrap{padding:20px 0 !important}#ssv-widget-06 h2{font-size:28px !important;max-width:100%}#ssv-widget-06 .ssv06-item summary{font-size:15px;padding:16px 18px !important}}
 
 /* ===== Widget 07 — Aseguradoras / Logo Slider (Sección 7) ===== */
 #ssv-widget-07{box-sizing:border-box;background:#fff;color:#071A49;font-family:'Lato',Arial,sans-serif;padding:0 !important;margin:0 !important;width:100% !important;text-align:left !important;overflow:hidden !important}
@@ -153,7 +153,7 @@
 #ssv-widget-07 .ssv07-logo{flex:0 0 auto;height:44px;width:auto;max-width:150px;object-fit:contain;margin:0 28px !important;opacity:.75;filter:grayscale(100%);transition:opacity .2s ease,filter .2s ease}
 #ssv-widget-07 .ssv07-logo:hover{opacity:1;filter:grayscale(0%)}
 @keyframes ssv07-scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-@media(max-width:700px){#ssv-widget-07 h2{font-size:28px !important}#ssv-widget-07 .ssv07-logo{height:34px;margin:0 20px !important}#ssv-widget-07 .ssv07-track{animation-duration:28s}}
+@media(max-width:700px){#ssv-widget-07 .ssv07-wrap{padding:20px 20px !important}#ssv-widget-07 h2{font-size:28px !important}#ssv-widget-07 .ssv07-logo{height:34px;margin:0 20px !important}#ssv-widget-07 .ssv07-track{animation-duration:28s}}
 
 /* ===== Widget 08 — 6 Puertas / ¿Qué necesitas resolver hoy? (Sección 2) ===== */
 #ssv-widget-08{--blue:#0076DF;--navy:#071A49;--muted:#5F6368;--line:#E5E7EB;box-sizing:border-box;background:#fff !important;color:var(--navy);font-family:'Lato',Arial,sans-serif;padding:0 20px !important;margin:0 !important;width:100% !important;text-align:left !important}
@@ -172,4 +172,4 @@
 #ssv-widget-08 .ssv08-card p{min-height:48px;margin:0 0 16px !important;color:var(--muted);font-size:16px;line-height:1.5;text-align:left !important}
 #ssv-widget-08 .ssv08-more{display:inline-flex;align-items:center;gap:8px;color:var(--blue);font-size:15px;font-weight:500;text-decoration:none;text-align:left !important}
 @media(max-width:900px){#ssv-widget-08 .ssv08-grid{grid-template-columns:repeat(2,1fr) !important}}
-@media(max-width:700px){#ssv-widget-08{padding:0 20px !important}#ssv-widget-08 .ssv08-wrap{padding:28px 0 !important}#ssv-widget-08 .ssv08-grid{grid-template-columns:1fr !important;gap:20px}#ssv-widget-08 h2{font-size:28px !important}#ssv-widget-08 .ssv08-body{padding:22px !important}#ssv-widget-08 .ssv08-image{height:200px}}
+@media(max-width:700px){#ssv-widget-08{padding:0 20px !important}#ssv-widget-08 .ssv08-wrap{padding:20px 0 !important}#ssv-widget-08 .ssv08-grid{grid-template-columns:1fr !important;gap:20px}#ssv-widget-08 h2{font-size:28px !important}#ssv-widget-08 .ssv08-body{padding:22px !important}#ssv-widget-08 .ssv08-image{height:200px}}
