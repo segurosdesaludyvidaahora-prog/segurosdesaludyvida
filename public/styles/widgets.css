@@ -182,3 +182,15 @@
 #ssv-widget-08 .ssv08-more{display:inline-flex;align-items:center;gap:8px;color:var(--blue);font-size:15px;font-weight:500;text-decoration:none;text-align:left !important}
 @media(max-width:900px){#ssv-widget-08 .ssv08-grid{grid-template-columns:repeat(2,1fr) !important}}
 @media(max-width:700px){#ssv-widget-08{padding:0 20px !important}#ssv-widget-08 .ssv08-wrap{padding:20px 0 !important}#ssv-widget-08 .ssv08-grid{grid-template-columns:1fr !important;gap:20px}#ssv-widget-08 h2{font-size:28px !important}#ssv-widget-08 .ssv08-body{padding:22px !important}#ssv-widget-08 .ssv08-image{height:200px}}
+
+/* ===== QR de WhatsApp para CTAs de conversación en desktop (2026-09-10) =====
+   WhatsApp no es una app nativa en escritorio. En pantallas anchas (>700px),
+   estos 3 botones (Hero, Bio Lorena, FAQ) se reemplazan por un código QR que
+   lleva al mismo chat de WhatsApp. En móvil se mantiene el botón normal.
+   Solo aplica a botones cuyo destino final SIEMPRE es hablar por WhatsApp —
+   no a las tarjetas de 6 Puertas/Autogestión, que son temporales hasta que
+   exista el Autoservicio. */
+.ssv-wa-qr{display:none !important;align-items:center !important;gap:12px;margin:0 !important}
+.ssv-wa-qr img{width:64px;height:64px;border-radius:10px;border:1px solid #E5E7EB;display:block !important;margin:0 !important}
+.ssv-wa-qr span{font-size:13px;font-weight:600;color:#5F6368;max-width:170px;line-height:1.35;text-align:left !important}
+@media(min-width:701px){.ssv-wa-qr{display:flex !important}#ssv-widget-hero .ssv-secondary{display:none !important}#ssv-widget-04 .ssv04-more{display:none !important}#ssv-widget-06 .ssv06-cta-btn{display:none !important}}
