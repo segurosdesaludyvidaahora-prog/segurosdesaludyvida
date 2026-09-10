@@ -16,12 +16,16 @@
 
 /* ===== Ajuste de contenedor de plataforma (10MWS) =====
    10MWS envuelve cada bloque pegado en un contenedor propio
-   (.integrationThrid) que agrega 40px de padding arriba por
-   defecto, ADEMÁS del padding interno de cada widget. Esto se
-   reduce solo en móvil para no duplicar espacio entre secciones.
-   Verificado 2026-09-10: afecta a los 9 bloques del HOME por igual,
-   scopeado a esta página por estar dentro de este archivo. */
-@media(max-width:700px){.integrationThrid{padding-top:12px !important}}
+   (.integrationThrid) que agrega 40px de padding ARRIBA Y ABAJO
+   por defecto (80px total por sección), ADEMÁS del padding interno
+   de cada widget. Esto se reduce en todos los tamaños de pantalla
+   para no duplicar espacio entre secciones. Actualizado 2026-09-10:
+   la primera corrección solo bajaba el padding-top y solo en móvil;
+   el padding-bottom quedó sin tocar y se notaba en desktop entre
+   secciones consecutivas (ej. FAQ → Tres Universos). Afecta a todos
+   los bloques del HOME por igual, scopeado a esta página. */
+.integrationThrid{padding-top:16px !important;padding-bottom:16px !important}
+@media(max-width:700px){.integrationThrid{padding-top:12px !important;padding-bottom:12px !important}}
 
 /* ===== Widget Hero (Sección 1) ===== */
 #ssv-widget-hero,
