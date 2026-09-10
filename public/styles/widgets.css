@@ -99,7 +99,7 @@
 #ssv-widget-05 .ssv05-wrap{max-width:1200px;margin:0 auto !important;padding:32px 0 !important;text-align:left !important}
 #ssv-widget-05 .ssv05-kicker{margin:0 0 12px !important;color:#55779D;font-size:12px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;text-align:left !important}
 #ssv-widget-05 h2{max-width:650px;margin:0 0 24px !important;font-size:38px;line-height:1.14;font-weight:400;letter-spacing:-.025em;text-align:left !important}
-#ssv-widget-05 .ssv05-summary{display:flex !important;align-items:center !important;justify-content:space-between !important;flex-wrap:wrap;gap:16px;background:#F7F9FB;border-radius:20px;padding:20px 24px !important;margin:0 0 24px !important}
+#ssv-widget-05 .ssv05-summary{display:flex !important;align-items:center !important;justify-content:space-between !important;flex-wrap:wrap;gap:16px;background:#F1F3F4;border-radius:16px;padding:20px 24px !important;margin:0 0 20px !important}
 #ssv-widget-05 .ssv05-summary-left{display:flex !important;align-items:center !important;gap:14px}
 #ssv-widget-05 .ssv05-glogo{display:flex !important;align-items:center !important;gap:8px;font-size:20px;font-weight:600;color:#5F6368}
 #ssv-widget-05 .ssv05-glogo svg{width:24px;height:24px}
@@ -108,7 +108,7 @@
 #ssv-widget-05 .ssv05-count{color:#5F6368;font-size:14px}
 #ssv-widget-05 .ssv05-write{display:inline-flex;align-items:center;gap:8px;border-radius:999px;background:#0076DF;color:#fff !important;padding:12px 22px;font-size:14px;font-weight:700;text-decoration:none;flex:0 0 auto}
 #ssv-widget-05 .ssv05-grid{display:grid !important;grid-template-columns:repeat(3,1fr) !important;gap:20px}
-#ssv-widget-05 .ssv05-card{border:1px solid #E5E7EB;border-radius:20px;padding:22px !important;background:#fff;text-align:left !important;margin:0 !important}
+#ssv-widget-05 .ssv05-card{border:none;border-radius:16px;padding:22px !important;background:#F1F3F4;text-align:left !important;margin:0 !important}
 #ssv-widget-05 .ssv05-card-head{display:flex !important;align-items:center !important;gap:12px;margin:0 0 12px !important}
 #ssv-widget-05 .ssv05-avatar{width:40px;height:40px;border-radius:50%;display:flex !important;align-items:center !important;justify-content:center !important;color:#fff;font-size:16px;font-weight:700;flex:0 0 auto}
 #ssv-widget-05 .ssv05-card-name{font-size:15px;font-weight:700;color:#071A49;margin:0 !important}
