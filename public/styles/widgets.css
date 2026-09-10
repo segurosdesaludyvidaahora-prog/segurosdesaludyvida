@@ -118,3 +118,19 @@
 #ssv-widget-05 .ssv05-card-foot svg{width:14px;height:14px}
 @media(max-width:900px){#ssv-widget-05 .ssv05-grid{grid-template-columns:1fr !important}}
 @media(max-width:700px){#ssv-widget-05 .ssv05-wrap{padding:28px 0 !important}#ssv-widget-05 h2{font-size:28px !important}#ssv-widget-05 .ssv05-summary{padding:18px !important}}
+
+/* ===== Widget 06 — FAQ (Sección 6) ===== */
+#ssv-widget-06{box-sizing:border-box;background:#fff;color:#071A49;font-family:'Lato',Arial,sans-serif;padding:0 20px !important;margin:0 !important;width:100% !important;text-align:left !important}
+#ssv-widget-06 *{box-sizing:border-box}
+#ssv-widget-06 .ssv06-wrap{max-width:800px;margin:0 auto !important;padding:32px 0 !important;text-align:left !important}
+#ssv-widget-06 .ssv06-kicker{margin:0 0 12px !important;color:#55779D;font-size:12px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;text-align:left !important}
+#ssv-widget-06 h2{margin:0 0 10px !important;font-size:38px;line-height:1.14;font-weight:400;letter-spacing:-.025em;text-align:left !important}
+#ssv-widget-06 .ssv06-intro{margin:0 0 28px !important;color:#5F6368;font-size:17px;line-height:1.55;text-align:left !important}
+#ssv-widget-06 .ssv06-item{border-bottom:1px solid #E5E7EB;margin:0 !important;padding:0 !important}
+#ssv-widget-06 .ssv06-item summary{display:flex !important;align-items:center !important;justify-content:space-between !important;gap:16px;padding:20px 4px !important;cursor:pointer;list-style:none;font-size:17px;font-weight:500;color:#071A49;text-align:left !important}
+#ssv-widget-06 .ssv06-item summary::-webkit-details-marker{display:none}
+#ssv-widget-06 .ssv06-item summary::marker{content:""}
+#ssv-widget-06 .ssv06-icon{flex:0 0 auto;width:24px;height:24px;display:grid;place-items:center;border-radius:50%;background:#EEF7FC;color:#0076DF;font-size:16px;font-weight:700;transition:transform .2s ease}
+#ssv-widget-06 .ssv06-item[open] .ssv06-icon{transform:rotate(45deg)}
+#ssv-widget-06 .ssv06-item p{margin:0 0 22px !important;padding:0 4px !important;color:#5F6368;font-size:16px;line-height:1.6;text-align:left !important}
+@media(max-width:700px){#ssv-widget-06 .ssv06-wrap{padding:28px 0 !important}#ssv-widget-06 h2{font-size:28px !important}#ssv-widget-06 .ssv06-item summary{font-size:16px;padding:16px 4px !important}}
