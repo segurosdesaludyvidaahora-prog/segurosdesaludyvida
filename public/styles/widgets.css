@@ -142,3 +142,18 @@
 #ssv-widget-06 .ssv06-item p{margin:0 !important;padding:0 22px 20px !important;color:#5F6368;font-size:15px;line-height:1.6;text-align:left !important}
 @media(max-width:900px){#ssv-widget-06 .ssv06-grid{grid-template-columns:1fr !important}}
 @media(max-width:700px){#ssv-widget-06 .ssv06-wrap{padding:28px 0 !important}#ssv-widget-06 h2{font-size:28px !important;max-width:100%}#ssv-widget-06 .ssv06-item summary{font-size:15px;padding:16px 18px !important}}
+
+/* ===== Widget 07 — Aseguradoras / Logo Slider (Sección 7) ===== */
+#ssv-widget-07{box-sizing:border-box;background:#fff;color:#071A49;font-family:'Lato',Arial,sans-serif;padding:0 !important;margin:0 !important;width:100% !important;text-align:left !important;overflow:hidden !important}
+#ssv-widget-07 *{box-sizing:border-box}
+#ssv-widget-07 .ssv07-wrap{max-width:1200px;margin:0 auto !important;padding:32px 20px !important;text-align:left !important}
+#ssv-widget-07 .ssv07-kicker{margin:0 0 8px !important;color:#55779D;font-size:12px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;text-align:left !important}
+#ssv-widget-07 h2{margin:0 !important;font-size:38px;line-height:1.14;font-weight:400;letter-spacing:-.025em;text-align:left !important;max-width:650px}
+#ssv-widget-07 .ssv07-intro{margin:10px 0 0 !important;color:#5F6368;font-size:16px;line-height:1.5;text-align:left !important;max-width:650px}
+#ssv-widget-07 .ssv07-track-wrap{position:relative;margin-top:36px !important;-webkit-mask-image:linear-gradient(to right,transparent,#000 5%,#000 95%,transparent);mask-image:linear-gradient(to right,transparent,#000 5%,#000 95%,transparent)}
+#ssv-widget-07 .ssv07-track{display:flex !important;align-items:center !important;width:max-content;animation:ssv07-scroll 40s linear infinite}
+#ssv-widget-07 .ssv07-track:hover{animation-play-state:paused}
+#ssv-widget-07 .ssv07-logo{flex:0 0 auto;height:44px;width:auto;max-width:150px;object-fit:contain;margin:0 28px !important;opacity:.75;filter:grayscale(100%);transition:opacity .2s ease,filter .2s ease}
+#ssv-widget-07 .ssv07-logo:hover{opacity:1;filter:grayscale(0%)}
+@keyframes ssv07-scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media(max-width:700px){#ssv-widget-07 h2{font-size:28px !important}#ssv-widget-07 .ssv07-logo{height:34px;margin:0 20px !important}#ssv-widget-07 .ssv07-track{animation-duration:28s}}
