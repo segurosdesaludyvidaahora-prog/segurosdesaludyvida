@@ -103,7 +103,6 @@ No hay rol de "equipo/asistente" con acceso al sistema — el selector "Lorena /
 12. Prospecto queda guardado en el dashboard de Lorena, con todas sus respuestas,
     listo para que ella agregue notas o lo gestione
 ```
-
 **Flujo paralelo — Lorena crea un Precalificador nuevo:**
 
 ```
@@ -140,6 +139,7 @@ Antes de escribir una sola línea de código de la aplicación, debe entregarse 
 - Propuestas de mejora futuras (sección 23).
 
 **No deberá escribirse una sola línea de código hasta que esta fase haya sido revisada y aprobada explícitamente por Milton y/o Lorena.**
+
 ## 14. Arquitectura funcional
 
 ### 14.1 Stack tecnológico
@@ -309,6 +309,7 @@ CREATE TABLE notas_lead (
 - **Gmail (SMTP o Gmail API)** — cuenta `segurosdesaludyvidaahora@gmail.com` como remitente de notificaciones a Lorena.
 - **Supabase** — base de datos + autenticación del dashboard.
 - **10MinutesWebsite** — únicamente consumidor pasivo vía `<iframe src="https://precalificador.vercel.app/p/[codigo]">`.
+
 ## 17. Motor de IA o automatización
 
 ### 17.1 Generación en construcción (build-time)
@@ -328,7 +329,6 @@ CREATE TABLE notas_lead (
 ### 17.3 Aprendizaje diferido (no en MVP, documentado para fase futura)
 
 - Periódicamente, un proceso puede analizar las respuestas guardadas en `sesiones.preguntas_realizadas` y sugerir a Lorena ajustes a `preguntas_base` (ej. "esta pregunta casi nadie la responde distinto"). Esto es un backlog de Fase 3+, no parte del MVP.
-
 ## 18. Reglas de negocio
 
 Heredadas directamente de `SEGUROS-SALUD-VIDA-CODEX/01-strategy/03-WIDGET-AUTOSERVICIO-MASTER.md` y `08-AUTOSERVICIO-ARQUITECTURA-ACORDADA.md` — **no negociables**:
@@ -358,6 +358,7 @@ Heredadas directamente de `SEGUROS-SALUD-VIDA-CODEX/01-strategy/03-WIDGET-AUTOSE
 - `sesiones.preguntas_realizadas` guarda el historial completo y ordenado de cada sesión (qué se preguntó, si fue pregunta base o generada en vivo, y qué respondió el prospecto) — sirve tanto de auditoría como de insumo para el aprendizaje diferido futuro (sección 17.3).
 - `notas_lead` funciona como bitácora manual de Lorena sobre cada prospecto (con fecha).
 - No se requieren backups especiales más allá de los que Supabase ofrece por defecto en este MVP.
+
 ## 21. Dashboard o interfaz
 
 **Login:** usuario/contraseña, exclusivo de Lorena.
@@ -385,10 +386,15 @@ No se requieren notificaciones push dentro del dashboard para el MVP — el avis
 - Deploy en Vercel, prueba con el Precalificador "Familia" end-to-end.
 
 **Criterio de éxito:** Lorena crea el Precalificador "Familia" ella misma desde el dashboard, un prospecto de prueba lo completa (incluyendo al menos una pregunta generada en vivo), Lorena recibe el email, ve el lead completo en el dashboard, y la cita queda en su Google Calendar real.
+### Fase 2 — Réplica a los 12 segmentos del HOME
+Fuente: `SEGUROS-SALUD-VIDA-CODEX/01-strategy/04-CONTENT-MAP-HOME.md`, sección "05 — Tres Universos". Los Precalificadores mapean a estos 12 segmentos (no a las 6 "puertas" del widget de entrada, que son solo un filtro previo hacia un universo):
 
-### Fase 2 — Réplica a las 6 puertas
-- Lorena crea, con el mismo dashboard, los 5 Precalificadores restantes (Económico, Embarazo, Independiente, Mudanza, Dudas migratorias).
-- Ningún código nuevo debería ser necesario — es prueba de que el motor genérico funciona.
+- **Familia:** Seguro médico familiar · Seguro para embarazadas · Cambios familiares · Mudanzas
+- **Empresa:** Pequeñas empresas · Independientes · Beneficios corporativos · Retención de talento
+- **Tu Futuro:** Seguro de vida · Protección financiera · Planificación del legado · Nuevos horizontes
+
+- Lorena crea, con el mismo dashboard, los 11 Precalificadores restantes (ya existe "Familia" como piloto de Fase 1).
+- Ningún código nuevo debería ser necesario — es prueba de que el motor genérico funciona para cualquier segmento.
 
 ### Fase 3 — Aprendizaje diferido y refinamiento
 - Análisis periódico de `sesiones.preguntas_realizadas` para sugerir ajustes a Lorena.
@@ -426,7 +432,7 @@ No se requieren notificaciones push dentro del dashboard para el MVP — el avis
 ## 25. Instrucciones finales antes de escribir código
 
 1. Este documento debe leerse completo — junto con `SEGUROS-SALUD-VIDA-CODEX/01-strategy/03-WIDGET-AUTOSERVICIO-MASTER.md` y `08-AUTOSERVICIO-ARQUITECTURA-ACORDADA.md` — antes de tocar código.
-2. No programar las 6 puertas a la vez. Construir y validar completo el piloto ("Familia") primero.
+2. No programar los 12 segmentos a la vez. Construir y validar completo el piloto ("Familia") primero.
 3. Ante cualquier decisión de negocio no cubierta aquí (copy exacto, tono de una pregunta, qué alternativas mostrar en un segmento específico), **detenerse y preguntar** — no improvisar sobre reglas de negocio.
 4. Las decisiones técnicas de implementación (nombres de funciones, estructura interna de componentes, librerías auxiliares menores) sí quedan a criterio de Claude Code, siempre dentro del stack aprobado en la sección 14.1.
 5. Cualquier cambio de alcance respecto a este documento debe reflejarse aquí mismo (actualizar este archivo), no vivir solo en el historial de chat.
