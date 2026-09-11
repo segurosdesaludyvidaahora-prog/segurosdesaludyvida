@@ -2,11 +2,17 @@
 
 Motor de autoservicio inteligente que precalifica prospectos y los conduce a una cita de ~15 minutos con Lorena Alvarez.
 
+## ⚠️ Este proyecto es un SaaS multi-negocio (no exclusivo de Seguros de Salud y Vida)
+
+Desde 2026-09-11, el Precalificador se construye como producto genérico vendible a cualquier negocio — Seguros de Salud y Vida es el **negocio piloto (tenant #1)**, no el único cliente para el que se diseña. Ver `PLAN-DE-FASES-DESARROLLO.md` para el detalle completo de este cambio.
+
 ## Para retomar el trabajo
 
-**Lee primero, y completo:** [`MASTER_BLUEPRINT.md`](./MASTER_BLUEPRINT.md)
+**Lee, en este orden, y completos:**
+1. [`MASTER_BLUEPRINT.md`](./MASTER_BLUEPRINT.md) — fuente única de verdad del producto: visión, flujo, reglas de negocio, seguridad, modelo de datos base, criterios de aceptación.
+2. [`PLAN-DE-FASES-DESARROLLO.md`](./PLAN-DE-FASES-DESARROLLO.md) — el pivote a SaaS multi-negocio, los ajustes de arquitectura que introduce, y las 3 etapas de ejecución (pensadas para que cada una la tome un desarrollador distinto sin necesitar contexto de conversaciones previas). **Este es el documento que dice qué construir primero.**
 
-Ese documento es autocontenido: define visión, arquitectura, stack, modelo de datos, flujos, reglas de negocio, seguridad, roadmap y criterios de aceptación. No hace falta contexto adicional de conversaciones previas.
+No hace falta contexto adicional de conversaciones previas — ambos documentos son autocontenidos.
 
 **Antes de escribir código de la aplicación**, revisar también:
 - `PHASE_0_ARCHITECTURE_REQUEST.md` — checklist de aprobación de Fase 0.
