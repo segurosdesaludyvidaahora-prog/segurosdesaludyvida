@@ -396,6 +396,8 @@ Fuente: `SEGUROS-SALUD-VIDA-CODEX/01-strategy/04-CONTENT-MAP-HOME.md`, sección 
 - Lorena crea, con el mismo dashboard, los 11 Precalificadores restantes (ya existe "Familia" como piloto de Fase 1).
 - Ningún código nuevo debería ser necesario — es prueba de que el motor genérico funciona para cualquier segmento.
 
+**Integración pendiente en el HOME (confirmado 2026-09-11):** hoy TODOS los botones del HOME que deberían llevar al Autoservicio (Widget 08 "6 Puertas", Widget 02 "Autogestión/catálogo", Widget 09 "Tres Universos") apuntan **temporalmente a WhatsApp** (`https://wa.link/j6w4yi`) — placeholder explícito documentado en `SEGUROS-SALUD-VIDA-CODEX/01-strategy/06-REGISTRO-DE-VERSIONES.md` ("temporales hasta que exista el Autoservicio"). Cuando cada Precalificador esté listo, hay que coordinar con la sesión del HOME para reemplazar el `href` de WhatsApp de la tarjeta correspondiente por el enlace/iframe real del Precalificador. Esto es trabajo de integración en el repo del HOME, no del Precalificador — coordinar antes de dar por cerrada la Fase 2.
+
 ### Fase 3 — Aprendizaje diferido y refinamiento
 - Análisis periódico de `sesiones.preguntas_realizadas` para sugerir ajustes a Lorena.
 - Ajustes de copy y tono según datos reales de uso.
