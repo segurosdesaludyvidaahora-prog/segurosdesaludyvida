@@ -238,3 +238,28 @@
 #ssv-widget-10 .ssv10-cta{display:inline-flex;align-items:center;justify-content:center;gap:9px;border-radius:999px;background:#0076DF;color:#fff !important;padding:16px 32px;font-size:16px;font-weight:700;text-decoration:none !important}
 #ssv-widget-10 .ssv10-cta span{font-size:20px;line-height:1;font-weight:400}
 @media(max-width:700px){#ssv-widget-10 .ssv10-wrap{padding:44px 0 !important}#ssv-widget-10 h2{font-size:28px !important}}
+
+/* ===== Widget 11 — Footer ===== */
+#ssv-widget-11{--blue:#0076DF;--navy:#071A49;--muted:#5F6368;--line:#E5E7EB;box-sizing:border-box;background:#F7F9FB !important;color:var(--navy);font-family:'Lato',Arial,sans-serif;padding:0 20px !important;margin:0 !important;width:100% !important;text-align:left !important;border-top:1px solid var(--line)}
+#ssv-widget-11 *{box-sizing:border-box}
+#ssv-widget-11 .ssv11-wrap{max-width:1200px;margin:0 auto !important;padding:56px 0 28px !important;text-align:left !important}
+#ssv-widget-11 .ssv11-top{display:grid !important;grid-template-columns:1.4fr 1fr 1fr 1fr !important;gap:40px;padding-bottom:40px}
+#ssv-widget-11 .ssv11-logo{height:38px;width:auto;display:block !important;margin:0 0 16px !important}
+#ssv-widget-11 .ssv11-tagline{margin:0 0 20px !important;color:var(--muted);font-size:15px;line-height:1.5;max-width:320px;font-weight:400}
+#ssv-widget-11 .ssv11-location{display:flex !important;align-items:center !important;gap:8px;color:var(--muted);font-size:14px;margin:0 !important;font-weight:400}
+#ssv-widget-11 .ssv11-location svg{width:16px;height:16px;flex:0 0 auto;color:var(--blue)}
+#ssv-widget-11 h4{margin:0 0 18px !important;color:var(--navy);font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase !important;text-align:left !important}
+#ssv-widget-11 ul{list-style:none;margin:0 !important;padding:0 !important;display:flex !important;flex-direction:column !important;gap:12px}
+#ssv-widget-11 ul a{color:var(--muted);font-size:15px;text-decoration:none !important;font-weight:400}
+#ssv-widget-11 ul a:hover{color:var(--blue)}
+#ssv-widget-11 .ssv11-social{display:flex !important;gap:12px;margin-top:20px !important}
+#ssv-widget-11 .ssv11-social a{display:flex !important;align-items:center !important;justify-content:center !important;width:36px;height:36px;border-radius:50%;background:#EAF0F6;color:var(--blue);text-decoration:none !important}
+#ssv-widget-11 .ssv11-social a:hover{background:var(--blue);color:#fff}
+#ssv-widget-11 .ssv11-social svg{width:17px;height:17px}
+#ssv-widget-11 .ssv11-bottom{border-top:1px solid var(--line);padding-top:24px !important;display:flex !important;align-items:center !important;justify-content:space-between !important;flex-wrap:wrap;gap:12px}
+#ssv-widget-11 .ssv11-copy{color:var(--muted);font-size:13px;margin:0 !important;font-weight:400}
+#ssv-widget-11 .ssv11-legal-links{display:flex !important;gap:20px;list-style:none;margin:0 !important;padding:0 !important;flex-direction:row !important}
+#ssv-widget-11 .ssv11-legal-links a{color:var(--muted);font-size:13px;text-decoration:none !important;font-weight:400}
+#ssv-widget-11 .ssv11-legal-links a:hover{color:var(--blue)}
+@media(max-width:900px){#ssv-widget-11 .ssv11-top{grid-template-columns:1fr 1fr !important;gap:32px}}
+@media(max-width:600px){#ssv-widget-11 .ssv11-top{grid-template-columns:1fr !important;gap:28px}#ssv-widget-11 .ssv11-wrap{padding:40px 0 24px !important}#ssv-widget-11 .ssv11-bottom{flex-direction:column !important;align-items:flex-start !important}}
