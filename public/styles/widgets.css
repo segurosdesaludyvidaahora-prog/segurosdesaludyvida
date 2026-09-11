@@ -197,7 +197,7 @@
 .ssv-wa-qr{display:none !important;align-items:center !important;gap:12px;margin:0 !important}
 .ssv-wa-qr img{width:96px;height:96px;border-radius:0;border:none;display:block !important;margin:0 !important}
 .ssv-wa-qr span{font-size:13px;font-weight:400;color:#5F6368;max-width:170px;line-height:1.35;text-align:left !important}
-@media(min-width:701px){.ssv-wa-qr{display:flex !important}#ssv-widget-hero .ssv-secondary{display:none !important}#ssv-widget-04 .ssv04-more{display:none !important}#ssv-widget-06 .ssv06-cta-btn{display:none !important}#ssv-widget-09 .ssv09-cta-secondary{display:none !important}}
+@media(min-width:701px){.ssv-wa-qr{display:flex !important}#ssv-widget-hero .ssv-secondary{display:none !important}#ssv-widget-04 .ssv04-more{display:none !important}#ssv-widget-06 .ssv06-cta-btn{display:none !important}#ssv-widget-09 .ssv09-cta-secondary{display:none !important}#ssv-widget-10 .ssv10-cta{display:none !important}}
 #ssv-widget-09 .ssv-wa-qr{margin-top:2px !important}
 
 /* ===== Widget 09 — Tres Universos (Familia / Empresa / Tu Futuro) ===== */
@@ -223,3 +223,13 @@
 #ssv-widget-09 .ssv09-cta-primary span,#ssv-widget-09 .ssv09-cta-secondary span{font-size:20px;line-height:1;font-weight:400}
 @media(max-width:900px){#ssv-widget-09 .ssv09-grid{grid-template-columns:1fr !important}}
 @media(max-width:700px){#ssv-widget-09{padding:0 20px !important}#ssv-widget-09 .ssv09-wrap{padding:20px 0 !important}#ssv-widget-09 h2{font-size:28px !important}#ssv-widget-09 .ssv09-body{padding:24px !important}#ssv-widget-09 h3{font-size:21px}}
+
+/* ===== Widget 10 — CTA Final ===== */
+#ssv-widget-10{box-sizing:border-box;background:#fff;color:#071A49;font-family:'Lato',Arial,sans-serif;padding:0 20px !important;margin:0 !important;width:100% !important;text-align:left !important}
+#ssv-widget-10 *{box-sizing:border-box}
+#ssv-widget-10 .ssv10-wrap{max-width:700px;margin:0 auto !important;padding:72px 0 !important;text-align:left !important}
+#ssv-widget-10 h2{margin:0 0 14px !important;font-size:38px;line-height:1.15;font-weight:400;letter-spacing:-.025em;text-align:left !important}
+#ssv-widget-10 .ssv10-subtitle{margin:0 0 32px !important;color:#5F6368;font-size:18px;line-height:1.5;text-align:left !important}
+#ssv-widget-10 .ssv10-cta{display:inline-flex;align-items:center;justify-content:center;gap:9px;border-radius:999px;background:#0076DF;color:#fff !important;padding:16px 32px;font-size:16px;font-weight:700;text-decoration:none !important}
+#ssv-widget-10 .ssv10-cta span{font-size:20px;line-height:1;font-weight:400}
+@media(max-width:700px){#ssv-widget-10 .ssv10-wrap{padding:40px 0 !important}#ssv-widget-10 h2{font-size:28px !important}#ssv-widget-10 .ssv10-subtitle{font-size:16px}}
