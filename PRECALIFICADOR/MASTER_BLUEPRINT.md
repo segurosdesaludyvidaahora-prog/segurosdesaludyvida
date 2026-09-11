@@ -58,7 +58,7 @@ Convertir visitantes del sitio en **citas agendadas y bien preparadas** con Lore
 
 Microapp web independiente (no un widget HTML estático), multi-pantalla, con backend propio, base de datos propia y panel de administración propio. Se integra al sitio principal (10MinutesWebsite) mediante `<iframe>`.
 
-**Alcance de tenant:** Un solo tenant real en producción — **Seguros de Salud y Vida / Lorena Alvarez**. La arquitectura de datos se diseña de forma que sea multitenant-ready (todo registro cuelga de un `tenant_id`), pero **no se construye UI ni lógica multitenant en esta fase** — sería sobre-ingeniería para un solo cliente real hoy.
+**⚠️ CAMBIO DE ALCANCE (2026-09-11):** este producto se construye como **SaaS multi-negocio genérico**, vendible a cualquier negocio que necesite precalificar prospectos y agendarlos con un asesor humano — no exclusivo de seguros. **Seguros de Salud y Vida / Lorena Alvarez es el negocio piloto (tenant #1)**, pero la arquitectura, el dashboard y el modelo de datos deben servir para cualquier negocio desde el día 1, no como "preparado a futuro". Detalle completo del impacto de este cambio y el plan de ejecución dividido por etapas: **`PLAN-DE-FASES-DESARROLLO.md`** (mismo directorio). Ese documento es el que se debe leer junto con este antes de programar.
 
 ## 11. Usuarios y permisos
 
@@ -290,6 +290,8 @@ CREATE TABLE notas_lead (
 );
 ```
 
+**Nota (2026-09-11):** este esquema base se extiende con una tabla `negocios` (tenant real) y ajustes de `negocio_id` en las tablas de arriba — ver `PLAN-DE-FASES-DESARROLLO.md` sección 2 y Etapa 1 para el detalle completo del modelo de datos multi-negocio.
+
 **Nota sobre borrado:** Lorena puede borrar un `lead` completo (y sus `notas_lead` en cascada) desde el dashboard. No hay borrado automático por tiempo — retención indefinida por decisión explícita.
 
 ## 15. Módulos principales
@@ -402,8 +404,8 @@ Fuente: `SEGUROS-SALUD-VIDA-CODEX/01-strategy/04-CONTENT-MAP-HOME.md`, sección 
 - Análisis periódico de `sesiones.preguntas_realizadas` para sugerir ajustes a Lorena.
 - Ajustes de copy y tono según datos reales de uso.
 
-### Fase 4 (futuro, no planificada aún) — Multitenant real
-- Solo si aparece un segundo negocio/cliente real. Hoy el modelo de datos ya lo permite (`tenant_id`), pero no se construye UI para eso ahora.
+### Fase 4 — Multitenant real
+**Actualización 2026-09-11: esto ya no es "futuro" — es el Bloque 1 de `PLAN-DE-FASES-DESARROLLO.md`.** El pivote a SaaS multi-negocio adelantó esta fase al inicio de la construcción en vez de dejarla como mejora especulativa. Ver ese documento para el detalle completo (tabla `negocios`, RLS, OAuth de Calendar por negocio, etc.).
 
 ## 23. Riesgos y mitigaciones
 
@@ -433,7 +435,7 @@ Fuente: `SEGUROS-SALUD-VIDA-CODEX/01-strategy/04-CONTENT-MAP-HOME.md`, sección 
 
 ## 25. Instrucciones finales antes de escribir código
 
-1. Este documento debe leerse completo — junto con `SEGUROS-SALUD-VIDA-CODEX/01-strategy/03-WIDGET-AUTOSERVICIO-MASTER.md` y `08-AUTOSERVICIO-ARQUITECTURA-ACORDADA.md` — antes de tocar código.
+1. Este documento debe leerse completo — junto con `PLAN-DE-FASES-DESARROLLO.md`, `SEGUROS-SALUD-VIDA-CODEX/01-strategy/03-WIDGET-AUTOSERVICIO-MASTER.md` y `08-AUTOSERVICIO-ARQUITECTURA-ACORDADA.md` — antes de tocar código.
 2. No programar los 12 segmentos a la vez. Construir y validar completo el piloto ("Familia") primero.
 3. Ante cualquier decisión de negocio no cubierta aquí (copy exacto, tono de una pregunta, qué alternativas mostrar en un segmento específico), **detenerse y preguntar** — no improvisar sobre reglas de negocio.
 4. Las decisiones técnicas de implementación (nombres de funciones, estructura interna de componentes, librerías auxiliares menores) sí quedan a criterio de Claude Code, siempre dentro del stack aprobado en la sección 14.1.
@@ -442,4 +444,4 @@ Fuente: `SEGUROS-SALUD-VIDA-CODEX/01-strategy/04-CONTENT-MAP-HOME.md`, sección 
 ---
 
 **Documento aprobado para iniciar Fase 0 de implementación.**  
-**Próximo paso:** Setup del proyecto Next.js + Supabase y construcción del Precalificador piloto ("Familia").
+**Próximo paso:** ver `PLAN-DE-FASES-DESARROLLO.md`, Etapa 1 — setup del proyecto Next.js + Supabase multi-negocio y construcción del Precalificador piloto ("Familia").
