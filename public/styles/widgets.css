@@ -1,3 +1,269 @@
+/* ============================================
+   SEGUROS DE SALUD Y VIDA — WIDGETS CSS
+   Archivo único, acumulativo. Cada widget nuevo
+   se agrega al final. Nunca se borra lo anterior.
+
+   IMPORTANTE: 10MinutesWebsite carga su propio
+   home.css DESPUÉS de este archivo, y ese CSS
+   pisa nuestras reglas de layout (margin, width,
+   text-align, etc.) si no las forzamos con
+   !important. Por eso las propiedades críticas
+   de layout llevan !important en todo este archivo.
+
+   REGLA FIJA: todo el texto va SIEMPRE alineado a
+   la izquierda, nunca centrado.
+   ============================================ */
+
+/* ===== Ajuste de contenedor de plataforma (10MWS) =====
+   10MWS envuelve cada bloque pegado en un contenedor propio
+   (.integrationThrid) que agrega 40px de padding ARRIBA Y ABAJO
+   por defecto (80px total por sección), ADEMÁS del padding interno
+   de cada widget. Esto se reduce en todos los tamaños de pantalla
+   para no duplicar espacio entre secciones. Actualizado 2026-09-10:
+   la primera corrección solo bajaba el padding-top y solo en móvil;
+   el padding-bottom quedó sin tocar y se notaba en desktop entre
+   secciones consecutivas (ej. FAQ → Tres Universos). Afecta a todos
+   los bloques del HOME por igual, scopeado a esta página. */
+.integrationThrid{padding-top:16px !important;padding-bottom:16px !important}
+@media(max-width:700px){.integrationThrid{padding-top:12px !important;padding-bottom:12px !important}}
+
+/* ===== Widget Hero (Sección 1) ===== */
+#ssv-widget-hero,
+#ssv-widget-hero * { box-sizing: border-box; }
+#ssv-widget-hero { width: 100% !important; margin: 0 !important; padding: 0 !important; background: #ffffff; color: #071a49; font-family: 'Lato', Arial, sans-serif; overflow: hidden; text-align: left !important; }
+#ssv-widget-hero a { color: inherit; text-decoration: none; }
+#ssv-widget-hero .ssv-hero-inner { width: 100% !important; max-width: 1200px; min-height: 540px; margin: 0 auto !important; display: grid !important; grid-template-columns: 1fr 1fr !important; text-align: left !important; }
+#ssv-widget-hero .ssv-hero-copy { display: flex !important; flex-direction: column !important; justify-content: center !important; align-items: flex-start !important; padding: 0 48px !important; text-align: left !important; }
+#ssv-widget-hero .ssv-eyebrow { width: 100%; margin: 0 0 20px !important; color: #0076df; font-size: 11px; letter-spacing: .28em; line-height: 1.5; text-transform: uppercase; text-align: left !important; }
+#ssv-widget-hero h1 { width: 100%; max-width: 530px; margin: 0 !important; color: #071a49; font-size: 50px; font-weight: 300; line-height: 1.08; letter-spacing: -.04em; text-align: left !important; }
+#ssv-widget-hero h1 span { color: #0076df; }
+#ssv-widget-hero .ssv-description { width: 100%; max-width: 475px; margin: 24px 0 32px !important; color: #5f6368; font-size: 17px; line-height: 1.65; text-align: left !important; }
+#ssv-widget-hero .ssv-actions { width: 100%; display: flex !important; align-items: center !important; justify-content: flex-start !important; gap: 24px; flex-wrap: wrap; text-align: left !important; }
+#ssv-widget-hero .ssv-primary { display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 15px 24px; border-radius: 999px; background: #0076df; color: #ffffff; font-size: 14px; font-weight: 600; text-align: center; flex: 0 0 auto; }
+#ssv-widget-hero .ssv-secondary { display: inline-flex; align-items: center; justify-content: center; gap: 8px; color: #0076df; font-size: 14px; font-weight: 600; border: 2px solid #0076df; padding: 12px 20px; border-radius: 999px; text-align: center; flex: 0 0 auto; }
+#ssv-widget-hero .ssv-hero-photo-wrap { margin: 0 !important; min-height: 540px; height: 100%; border-radius: 24px; overflow: hidden; background-color: #edf6fb; }
+#ssv-widget-hero .ssv-hero-photo { width: 100% !important; height: 100%; min-height: 540px; object-fit: cover; object-position: center 30%; display: block !important; }
+@media (max-width: 800px) {
+  #ssv-widget-hero .ssv-hero-inner { display: block !important; min-height: 0; }
+  #ssv-widget-hero .ssv-hero-copy { padding: 20px 20px 20px !important; align-items: flex-start !important; }
+  #ssv-widget-hero h1 { font-size: 36px !important; }
+  #ssv-widget-hero .ssv-actions { flex-direction: column !important; align-items: stretch !important; }
+  #ssv-widget-hero .ssv-primary,
+  #ssv-widget-hero .ssv-secondary { width: 100% !important; }
+  #ssv-widget-hero .ssv-hero-photo-wrap { min-height: 300px !important; margin: 0 20px 32px !important; width: calc(100% - 40px) !important; }
+}
+
+/* ===== Widget 02 — Soluciones (Sección 2) ===== */
+#ssv-widget-02{--blue:#0076DF;--navy:#071A49;--muted:#5F6368;--line:#E5E7EB;background:#fff;color:var(--navy);font-family:Lato,Arial,sans-serif;padding:0 20px !important;text-align:left !important}
+#ssv-widget-02 *{box-sizing:border-box}
+#ssv-widget-02 .ssv02-wrap{max-width:1200px;margin:0 auto !important;padding:32px 0 !important;text-align:left !important}
+#ssv-widget-02 .ssv02-kicker{margin:0 0 12px !important;color:var(--blue);font-size:12px;font-weight:500;letter-spacing:.25em;text-transform:uppercase;text-align:left !important}
+#ssv-widget-02 h2{margin:0 !important;font-size:38px;line-height:1.12;font-weight:400;letter-spacing:-.025em;text-align:left !important}
+#ssv-widget-02 .ssv02-intro{margin:10px 0 30px !important;color:var(--muted);font-size:17px;line-height:1.5;text-align:left !important}
+#ssv-widget-02 .ssv02-grid{display:grid !important;grid-template-columns:repeat(3,1fr) !important;gap:24px}
+#ssv-widget-02 .ssv02-card{overflow:hidden;border:1px solid var(--line);border-radius:24px;background:#fff;text-align:left !important;margin:0 !important}
+#ssv-widget-02 .ssv02-image{height:180px;width:100% !important;object-fit:cover;display:block !important;margin:0 !important}
+#ssv-widget-02 .ssv02-body{padding:26px 24px 28px !important;text-align:left !important}
+#ssv-widget-02 .ssv02-icon{width:44px;height:44px;display:grid;place-items:center;margin-top:-52px !important;margin-bottom:18px !important;border-radius:50%;background:#fff;color:var(--blue);position:relative}
+#ssv-widget-02 .ssv02-icon svg{width:28px;height:28px}
+#ssv-widget-02 h3{margin:0 0 8px !important;font-size:19px;line-height:1.25;font-weight:500;text-align:left !important}
+#ssv-widget-02 .ssv02-card p{min-height:48px;margin:0 0 16px !important;color:var(--muted);font-size:16px;line-height:1.5;text-align:left !important}
+#ssv-widget-02 .ssv02-more{color:var(--blue);font-size:15px;font-weight:500;text-decoration:none;text-align:left !important}
+@media(max-width:900px){#ssv-widget-02 .ssv02-grid{grid-template-columns:repeat(2,1fr) !important}}
+@media(max-width:700px){#ssv-widget-02{padding:0 20px !important}#ssv-widget-02 .ssv02-wrap{padding:20px 0 !important}#ssv-widget-02 .ssv02-grid{grid-template-columns:1fr !important;gap:20px}#ssv-widget-02 h2{font-size:28px !important}#ssv-widget-02 .ssv02-body{padding:22px !important}#ssv-widget-02 .ssv02-image{height:200px}}
+
+/* ===== Widget 03 — Educación / Conceptos (Sección 3) ===== */
+#ssv-widget-03{--blue:#0076DF;--kicker:#55779D;--navy:#071A49;--muted:#5F6368;--line:#E1EAF3;box-sizing:border-box;background:#F5F9FD !important;color:var(--navy);font-family:'Lato',Arial,sans-serif;padding:0 20px !important;margin:0 !important;width:100% !important;text-align:left !important}
+#ssv-widget-03 *{box-sizing:border-box}
+#ssv-widget-03 .ssv03-wrap{max-width:1200px;margin:0 auto !important;padding:32px 0 !important;text-align:left !important}
+#ssv-widget-03 .ssv03-kicker{margin:0 0 12px !important;color:var(--kicker);font-size:12px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;text-align:left !important}
+#ssv-widget-03 h2{max-width:650px;margin:0 !important;font-size:38px;line-height:1.14;font-weight:400;letter-spacing:-.025em;text-align:left !important}
+#ssv-widget-03 .ssv03-intro{max-width:650px;margin:12px 0 30px !important;color:var(--muted);font-size:17px;line-height:1.55;text-align:left !important}
+#ssv-widget-03 .ssv03-grid{display:grid !important;grid-template-columns:repeat(3,1fr) !important;gap:24px}
+#ssv-widget-03 .ssv03-card{display:block !important;overflow:hidden;border:1px solid var(--line);border-radius:24px;background:#fff;text-align:left !important;margin:0 !important}
+#ssv-widget-03 .ssv03-image{aspect-ratio:1/1 !important;width:100% !important;height:auto;object-fit:cover;display:block !important;margin:0 !important}
+#ssv-widget-03 .ssv03-body{padding:26px 24px 28px !important;text-align:left !important}
+#ssv-widget-03 .ssv03-icon{display:grid;width:44px;height:44px;place-items:center;margin-top:-52px !important;margin-bottom:18px !important;border-radius:50%;background:#fff;color:var(--blue);position:relative}
+#ssv-widget-03 .ssv03-icon svg{display:block;width:26px;height:26px}
+#ssv-widget-03 h3{margin:0 0 10px !important;font-size:19px;line-height:1.25;font-weight:500;text-align:left !important}
+#ssv-widget-03 .ssv03-card p{margin:0 0 16px !important;color:var(--muted);font-size:16px;line-height:1.5;text-align:left !important}
+#ssv-widget-03 .ssv03-more{display:inline-flex;align-items:center;gap:8px;color:var(--blue);font-size:15px;font-weight:700;text-decoration:none;text-align:left !important}
+#ssv-widget-03 .ssv03-more span{font-size:20px;font-weight:400}
+@media(max-width:900px){#ssv-widget-03 .ssv03-grid{grid-template-columns:repeat(2,1fr) !important}}
+@media(max-width:700px){#ssv-widget-03 .ssv03-wrap{padding:20px 0 !important}#ssv-widget-03 .ssv03-grid{grid-template-columns:1fr !important;gap:20px}#ssv-widget-03 h2{font-size:28px !important}#ssv-widget-03 .ssv03-body{padding:22px !important}}
+
+/* ===== Widget 04 — Lorena / Tecnología + Persona (Sección 4) ===== */
+#ssv-widget-04{box-sizing:border-box;background:#fff;color:#071A49;font-family:'Lato',Arial,sans-serif;padding:0 20px !important;margin:0 !important;width:100% !important;text-align:left !important}
+#ssv-widget-04 *{box-sizing:border-box}
+#ssv-widget-04 .ssv04-wrap{max-width:1200px;margin:0 auto !important;padding:32px 0 !important;display:grid !important;grid-template-columns:1fr 1fr !important;gap:64px;align-items:center}
+#ssv-widget-04 .ssv04-copy{text-align:left !important}
+#ssv-widget-04 .ssv04-kicker{margin:0 0 14px !important;color:#55779D;font-size:12px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;text-align:left !important}
+#ssv-widget-04 h2{max-width:540px;margin:0 0 18px !important;font-size:38px;line-height:1.14;font-weight:400;letter-spacing:-.025em;text-align:left !important}
+#ssv-widget-04 .ssv04-copy p{max-width:540px;margin:0 0 18px !important;color:#5F6368;font-size:17px;line-height:1.55;text-align:left !important}
+#ssv-widget-04 .ssv04-more{display:inline-flex;align-items:center;gap:9px;border-radius:999px;background:#0076DF;color:#fff !important;padding:14px 22px;font-size:15px;font-weight:700;text-decoration:none}
+#ssv-widget-04 .ssv04-more span{font-size:20px;line-height:1;font-weight:400}
+#ssv-widget-04 .ssv04-photo-wrap{border-radius:24px;overflow:hidden;background:#F7F8FA;margin:0 !important}
+#ssv-widget-04 .ssv04-photo{display:block !important;width:100% !important;height:auto;max-height:560px;object-fit:cover;object-position:center top;margin:0 !important}
+@media(max-width:760px){#ssv-widget-04 .ssv04-wrap{grid-template-columns:1fr !important;gap:28px !important;padding:20px 0 !important}#ssv-widget-04 h2{font-size:30px !important}#ssv-widget-04 .ssv04-photo-wrap{order:-1}}
+
+/* ===== Widget 05 — Google Reviews / Testimonios (Sección 5) ===== */
+#ssv-widget-05{box-sizing:border-box;background:#fff;color:#071A49;font-family:'Lato',Arial,sans-serif;padding:0 20px !important;margin:0 !important;width:100% !important;text-align:left !important}
+#ssv-widget-05 *{box-sizing:border-box}
+#ssv-widget-05 .ssv05-wrap{max-width:1200px;margin:0 auto !important;padding:32px 0 !important;text-align:left !important}
+#ssv-widget-05 .ssv05-kicker{margin:0 0 12px !important;color:#55779D;font-size:12px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;text-align:left !important}
+#ssv-widget-05 h2{max-width:650px;margin:0 0 24px !important;font-size:38px;line-height:1.14;font-weight:400;letter-spacing:-.025em;text-align:left !important}
+#ssv-widget-05 .ssv05-summary{display:flex !important;align-items:center !important;justify-content:space-between !important;flex-wrap:wrap;gap:16px;background:#F1F3F4;border-radius:16px;padding:20px 24px !important;margin:0 0 20px !important}
+#ssv-widget-05 .ssv05-summary-left{display:flex !important;align-items:center !important;gap:14px}
+#ssv-widget-05 .ssv05-glogo{display:flex !important;align-items:center !important;gap:8px;font-size:20px;font-weight:600;color:#5F6368}
+#ssv-widget-05 .ssv05-glogo svg{width:24px;height:24px}
+#ssv-widget-05 .ssv05-score{font-size:20px;font-weight:700;color:#071A49}
+#ssv-widget-05 .ssv05-stars{color:#FBBC05;font-size:16px;letter-spacing:2px}
+#ssv-widget-05 .ssv05-count{color:#5F6368;font-size:14px}
+#ssv-widget-05 .ssv05-write{display:inline-flex;align-items:center;gap:8px;border-radius:999px;background:#0076DF;color:#fff !important;padding:12px 22px;font-size:14px;font-weight:700;text-decoration:none;flex:0 0 auto}
+#ssv-widget-05 .ssv05-grid{display:grid !important;grid-template-columns:repeat(3,1fr) !important;gap:20px}
+#ssv-widget-05 .ssv05-card{border:none;border-radius:16px;padding:22px !important;background:#F1F3F4;text-align:left !important;margin:0 !important}
+#ssv-widget-05 .ssv05-card-head{display:flex !important;align-items:center !important;gap:12px;margin:0 0 12px !important}
+#ssv-widget-05 .ssv05-avatar{width:40px;height:40px;border-radius:50%;display:flex !important;align-items:center !important;justify-content:center !important;color:#fff;font-size:16px;font-weight:700;flex:0 0 auto}
+#ssv-widget-05 .ssv05-card-name{font-size:15px;font-weight:700;color:#071A49;margin:0 !important}
+#ssv-widget-05 .ssv05-card-stars{color:#FBBC05;font-size:13px;margin:2px 0 0 !important}
+#ssv-widget-05 .ssv05-card p{margin:0 0 14px !important;color:#3C4043;font-size:15px;line-height:1.5;text-align:left !important}
+#ssv-widget-05 .ssv05-card-foot{display:flex !important;align-items:center !important;gap:6px;color:#5F6368;font-size:12px}
+#ssv-widget-05 .ssv05-card-foot svg{width:14px;height:14px}
+@media(max-width:900px){#ssv-widget-05 .ssv05-grid{grid-template-columns:1fr !important}}
+@media(max-width:700px){#ssv-widget-05 .ssv05-wrap{padding:20px 0 !important}#ssv-widget-05 h2{font-size:28px !important}#ssv-widget-05 .ssv05-summary{padding:18px !important}}
+
+/* ===== Widget 06 — FAQ (Sección 6) ===== */
+#ssv-widget-06{box-sizing:border-box;background:#fff;color:#071A49;font-family:'Lato',Arial,sans-serif;padding:0 20px !important;margin:0 !important;width:100% !important;text-align:left !important}
+#ssv-widget-06 *{box-sizing:border-box}
+#ssv-widget-06 .ssv06-wrap{max-width:1200px;margin:0 auto !important;padding:32px 0 !important;text-align:left !important}
+#ssv-widget-06 .ssv06-kicker{margin:0 0 12px !important;color:#55779D;font-size:12px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;text-align:left !important}
+#ssv-widget-06 h2{max-width:420px;margin:0 0 32px !important;font-size:38px;line-height:1.14;font-weight:400;letter-spacing:-.025em;text-align:left !important}
+#ssv-widget-06 .ssv06-grid{display:grid !important;grid-template-columns:340px 1fr !important;gap:32px;align-items:start}
+#ssv-widget-06 .ssv06-cta-card{background:#F7F9FB;border-radius:20px;padding:28px !important;text-align:left !important}
+#ssv-widget-06 .ssv06-avatar{width:56px;height:56px;border-radius:50%;object-fit:cover;display:block !important;margin:0 0 20px !important}
+#ssv-widget-06 .ssv06-cta-card h3{margin:0 0 10px !important;font-size:21px;font-weight:500;line-height:1.25;text-align:left !important}
+#ssv-widget-06 .ssv06-cta-card p{margin:0 0 22px !important;color:#5F6368;font-size:15px;line-height:1.5;text-align:left !important}
+#ssv-widget-06 .ssv06-cta-btn{display:inline-flex;align-items:center;justify-content:center;width:100%;border-radius:999px;background:#0076DF;color:#fff !important;padding:14px 22px;font-size:15px;font-weight:600;text-decoration:none}
+#ssv-widget-06 .ssv06-list{display:flex !important;flex-direction:column !important;gap:12px}
+#ssv-widget-06 .ssv06-item{border:none;border-radius:16px;background:#F7F9FB;margin:0 !important;padding:0 !important;overflow:hidden}
+#ssv-widget-06 .ssv06-item[open]{background:#F1F3F4}
+#ssv-widget-06 .ssv06-item summary{display:flex !important;align-items:center !important;justify-content:space-between !important;gap:16px;padding:18px 22px !important;cursor:pointer;list-style:none;font-size:16px;font-weight:500;color:#071A49;text-align:left !important}
+#ssv-widget-06 .ssv06-item summary::-webkit-details-marker{display:none}
+#ssv-widget-06 .ssv06-item summary::marker{content:""}
+#ssv-widget-06 .ssv06-icon{flex:0 0 auto;width:24px;height:24px;display:grid;place-items:center;border-radius:50%;background:#fff;color:#0076DF;font-size:16px;font-weight:700;transition:transform .2s ease}
+#ssv-widget-06 .ssv06-item[open] .ssv06-icon{transform:rotate(45deg)}
+#ssv-widget-06 .ssv06-item p{margin:0 !important;padding:0 22px 20px !important;color:#5F6368;font-size:15px;line-height:1.6;text-align:left !important}
+@media(max-width:900px){#ssv-widget-06 .ssv06-grid{grid-template-columns:1fr !important}}
+@media(max-width:700px){#ssv-widget-06 .ssv06-wrap{padding:20px 0 !important}#ssv-widget-06 h2{font-size:28px !important;max-width:100%}#ssv-widget-06 .ssv06-item summary{font-size:15px;padding:16px 18px !important}}
+
+/* ===== Widget 07 — Aseguradoras / Logo Slider (Sección 7) ===== */
+#ssv-widget-07{box-sizing:border-box;background:#fff;color:#071A49;font-family:'Lato',Arial,sans-serif;padding:0 !important;margin:0 !important;width:100% !important;text-align:left !important;overflow:hidden !important}
+#ssv-widget-07 *{box-sizing:border-box}
+#ssv-widget-07 .ssv07-wrap{max-width:1200px;margin:0 auto !important;padding:32px 20px !important;text-align:left !important}
+#ssv-widget-07 .ssv07-track-wrap{position:relative;margin-top:0 !important;-webkit-mask-image:linear-gradient(to right,transparent,#000 5%,#000 95%,transparent);mask-image:linear-gradient(to right,transparent,#000 5%,#000 95%,transparent)}
+#ssv-widget-07 .ssv07-track{display:flex !important;align-items:center !important;width:max-content;animation:ssv07-scroll 40s linear infinite}
+#ssv-widget-07 .ssv07-track:hover{animation-play-state:paused}
+#ssv-widget-07 .ssv07-logo{flex:0 0 auto;height:44px;width:auto;max-width:150px;object-fit:contain;margin:0 28px !important;opacity:.75;filter:grayscale(100%);transition:opacity .2s ease,filter .2s ease}
+#ssv-widget-07 .ssv07-logo:hover{opacity:1;filter:grayscale(0%)}
+@keyframes ssv07-scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media(max-width:700px){#ssv-widget-07 .ssv07-wrap{padding:20px 20px !important}#ssv-widget-07 h2{font-size:28px !important}#ssv-widget-07 .ssv07-logo{height:34px;margin:0 20px !important}#ssv-widget-07 .ssv07-track{animation-duration:28s}}
+
+/* ===== Widget 08 — 6 Puertas / ¿Qué necesitas resolver hoy? (Sección 2) ===== */
+#ssv-widget-08{--blue:#0076DF;--navy:#071A49;--muted:#5F6368;--line:#E5E7EB;box-sizing:border-box;background:#fff !important;color:var(--navy);font-family:'Lato',Arial,sans-serif;padding:0 20px !important;margin:0 !important;width:100% !important;text-align:left !important}
+#ssv-widget-08 *{box-sizing:border-box}
+#ssv-widget-08 .ssv08-wrap{max-width:1200px;margin:0 auto !important;padding:32px 0 !important;text-align:left !important}
+#ssv-widget-08 .ssv08-kicker{margin:0 0 12px !important;color:var(--blue);font-size:12px;font-weight:500;letter-spacing:.25em;text-transform:uppercase;text-align:left !important}
+#ssv-widget-08 h2{margin:0 !important;font-size:38px;line-height:1.12;font-weight:400;letter-spacing:-.025em;text-align:left !important}
+#ssv-widget-08 .ssv08-intro{margin:10px 0 30px !important;color:var(--muted);font-size:17px;line-height:1.5;text-align:left !important}
+#ssv-widget-08 .ssv08-grid{display:grid !important;grid-template-columns:repeat(3,1fr) !important;gap:24px}
+#ssv-widget-08 .ssv08-card{display:block !important;overflow:hidden;border:1px solid var(--line);border-radius:24px;background:#fff;text-align:left !important;margin:0 !important;text-decoration:none !important;color:var(--navy) !important}
+#ssv-widget-08 .ssv08-image{height:180px;width:100% !important;object-fit:cover;display:block !important;margin:0 !important}
+#ssv-widget-08 .ssv08-body{padding:26px 24px 28px !important;text-align:left !important}
+#ssv-widget-08 .ssv08-icon{width:44px;height:44px;display:grid;place-items:center;margin-top:-52px !important;margin-bottom:18px !important;border-radius:50%;background:#fff;color:var(--blue);position:relative}
+#ssv-widget-08 .ssv08-icon svg{width:26px;height:26px}
+#ssv-widget-08 h3{margin:0 0 8px !important;font-size:19px;line-height:1.25;font-weight:500;text-align:left !important}
+#ssv-widget-08 .ssv08-card p{min-height:48px;margin:0 0 16px !important;color:var(--muted);font-size:16px;line-height:1.5;text-align:left !important}
+#ssv-widget-08 .ssv08-more{display:inline-flex;align-items:center;gap:8px;color:var(--blue);font-size:15px;font-weight:500;text-decoration:none;text-align:left !important}
+@media(max-width:900px){#ssv-widget-08 .ssv08-grid{grid-template-columns:repeat(2,1fr) !important}}
+@media(max-width:700px){#ssv-widget-08{padding:0 20px !important}#ssv-widget-08 .ssv08-wrap{padding:20px 0 !important}#ssv-widget-08 .ssv08-grid{grid-template-columns:1fr !important;gap:20px}#ssv-widget-08 h2{font-size:28px !important}#ssv-widget-08 .ssv08-body{padding:22px !important}#ssv-widget-08 .ssv08-image{height:200px}}
+
+/* ===== QR de WhatsApp para CTAs de conversación en desktop (2026-09-10) =====
+   WhatsApp no es una app nativa en escritorio. En pantallas anchas (>700px),
+   estos 3 botones (Hero, Bio Lorena, FAQ) se reemplazan por un código QR que
+   lleva al mismo chat de WhatsApp. En móvil se mantiene el botón normal.
+   Solo aplica a botones cuyo destino final SIEMPRE es hablar por WhatsApp —
+   no a las tarjetas de 6 Puertas/Autogestión, que son temporales hasta que
+   exista el Autoservicio. */
+.ssv-wa-qr{display:none !important;align-items:center !important;gap:12px;margin:0 !important}
+.ssv-wa-qr img{width:96px;height:96px;border-radius:0;border:none;display:block !important;margin:0 !important}
+.ssv-wa-qr span{font-size:13px;font-weight:400;color:#5F6368;max-width:170px;line-height:1.35;text-align:left !important}
+@media(min-width:701px){.ssv-wa-qr{display:flex !important}#ssv-widget-hero .ssv-secondary{display:none !important}#ssv-widget-04 .ssv04-more{display:none !important}#ssv-widget-06 .ssv06-cta-btn{display:none !important}#ssv-widget-09 .ssv09-cta-secondary{display:none !important}#ssv-widget-10 .ssv10-cta{display:none !important}}
+#ssv-widget-09 .ssv-wa-qr{margin-top:2px !important}
+#ssv-widget-10 .ssv-wa-qr{flex-direction:column !important;align-items:center !important;margin-top:8px !important}
+#ssv-widget-10 .ssv-wa-qr span{text-align:center !important;max-width:220px}
+
+/* ===== Widget 09 — Tres Universos (Familia / Empresa / Tu Futuro) ===== */
+#ssv-widget-09{--blue:#0076DF;--navy:#071A49;--muted:#5F6368;--line:#E5E7EB;box-sizing:border-box;background:#fff;color:var(--navy);font-family:'Lato',Arial,sans-serif;padding:0 20px !important;margin:0 !important;width:100% !important;text-align:left !important}
+#ssv-widget-09 *{box-sizing:border-box}
+#ssv-widget-09 .ssv09-wrap{max-width:1200px;margin:0 auto !important;padding:32px 0 !important;text-align:left !important}
+#ssv-widget-09 .ssv09-kicker{margin:0 0 12px !important;color:var(--blue);font-size:12px;font-weight:500;letter-spacing:.25em;text-transform:uppercase;text-align:left !important}
+#ssv-widget-09 h2{margin:0 !important;font-size:38px;line-height:1.12;font-weight:400;letter-spacing:-.025em;text-align:left !important}
+#ssv-widget-09 .ssv09-intro{max-width:650px;margin:10px 0 30px !important;color:var(--muted);font-size:17px;line-height:1.5;text-align:left !important}
+#ssv-widget-09 .ssv09-grid{display:grid !important;grid-template-columns:repeat(3,1fr) !important;gap:24px}
+#ssv-widget-09 .ssv09-card{overflow:hidden;border:1px solid var(--line);border-radius:24px;background:#fff;text-align:left !important;margin:0 !important}
+#ssv-widget-09 .ssv09-image{height:240px;width:100% !important;object-fit:cover;display:block !important;margin:0 !important}
+#ssv-widget-09 .ssv09-body{padding:32px !important;text-align:left !important}
+#ssv-widget-09 .ssv09-label{display:inline-block;margin:0 0 14px !important;color:var(--blue);font-size:12px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;text-align:left !important}
+#ssv-widget-09 h3{margin:0 0 10px !important;font-size:24px;line-height:1.2;font-weight:400;letter-spacing:-.02em;text-align:left !important}
+#ssv-widget-09 .ssv09-body>p{margin:0 0 20px !important;color:var(--muted);font-size:16px;line-height:1.5;text-align:left !important}
+#ssv-widget-09 .ssv09-list{display:flex !important;flex-direction:column !important;gap:10px;margin:0 0 24px !important;padding:0 !important;list-style:none !important}
+#ssv-widget-09 .ssv09-list li{display:flex !important;align-items:center !important;gap:10px;color:var(--navy);font-size:15px;text-align:left !important;margin:0 !important}
+#ssv-widget-09 .ssv09-list svg{flex:0 0 auto;width:18px;height:18px;color:var(--blue)}
+#ssv-widget-09 .ssv09-actions{display:flex !important;flex-direction:column !important;align-items:stretch !important;gap:10px}
+#ssv-widget-09 .ssv09-cta-primary{display:inline-flex;align-items:center;justify-content:center;gap:9px;border-radius:999px;background:var(--blue);color:#fff !important;padding:14px 18px;font-size:15px;font-weight:700;text-decoration:none !important;flex:1 1 0;text-align:center}
+#ssv-widget-09 .ssv09-cta-secondary{display:inline-flex;align-items:center;justify-content:center;gap:9px;border-radius:999px;background:#fff;color:var(--blue) !important;border:2px solid var(--blue);padding:12px 16px;font-size:15px;font-weight:700;text-decoration:none !important;flex:1 1 0;text-align:center}
+#ssv-widget-09 .ssv09-cta-primary span,#ssv-widget-09 .ssv09-cta-secondary span{font-size:20px;line-height:1;font-weight:400}
+@media(max-width:900px){#ssv-widget-09 .ssv09-grid{grid-template-columns:1fr !important}}
+@media(max-width:700px){#ssv-widget-09{padding:0 20px !important}#ssv-widget-09 .ssv09-wrap{padding:20px 0 !important}#ssv-widget-09 h2{font-size:28px !important}#ssv-widget-09 .ssv09-body{padding:24px !important}#ssv-widget-09 h3{font-size:21px}}
+
+/* ===== Widget 10 — CTA Final =====
+   EXCEPCIÓN AUTORIZADA (2026-09-11): este bloque va centrado
+   (texto y botón), a pedido explícito del usuario — única
+   excepción a la regla fija de "todo alineado a la izquierda"
+   en todo el sitio. Solo aplica a este widget. */
+#ssv-widget-10{box-sizing:border-box;background:#fff;color:#071A49;font-family:'Lato',Arial,sans-serif;padding:0 20px !important;margin:0 !important;width:100% !important;text-align:center !important}
+#ssv-widget-10 *{box-sizing:border-box}
+#ssv-widget-10 .ssv10-wrap{max-width:1200px;margin:0 auto !important;padding:64px 0 !important;text-align:center !important;display:flex !important;flex-direction:column !important;align-items:center !important}
+#ssv-widget-10 h2{margin:0 0 28px !important;max-width:650px;font-size:38px;line-height:1.15;font-weight:400;letter-spacing:-.025em;text-align:center !important}
+#ssv-widget-10 .ssv10-cta{display:inline-flex;align-items:center;justify-content:center;gap:9px;border-radius:999px;background:#0076DF;color:#fff !important;padding:16px 32px;font-size:16px;font-weight:700;text-decoration:none !important}
+#ssv-widget-10 .ssv10-cta span{font-size:20px;line-height:1;font-weight:400}
+@media(max-width:700px){#ssv-widget-10 .ssv10-wrap{padding:44px 0 !important}#ssv-widget-10 h2{font-size:28px !important}}
+
+/* ===== Widget 11 — Footer ===== */
+#ssv-widget-11{--blue:#0076DF;--navy:#071A49;--muted:#5F6368;--line:#E5E7EB;box-sizing:border-box;background:#F7F9FB !important;color:var(--navy);font-family:'Lato',Arial,sans-serif;padding:0 20px !important;margin:0 !important;width:100% !important;text-align:left !important;border-top:1px solid var(--line)}
+#ssv-widget-11 *{box-sizing:border-box}
+#ssv-widget-11 .ssv11-wrap{max-width:1200px;margin:0 auto !important;padding:56px 0 28px !important;text-align:left !important}
+#ssv-widget-11 .ssv11-top{display:grid !important;grid-template-columns:1.4fr 1fr 1fr 1fr !important;gap:40px;padding-bottom:40px}
+#ssv-widget-11 .ssv11-logo{height:76px;width:auto;max-width:100%;display:block !important;margin:0 0 16px !important}
+#ssv-widget-11 .ssv11-tagline{margin:0 0 20px !important;color:var(--muted);font-size:15px;line-height:1.5;max-width:320px;font-weight:400}
+#ssv-widget-11 .ssv11-location{display:flex !important;align-items:center !important;gap:8px;color:var(--muted);font-size:14px;margin:0 !important;font-weight:400}
+#ssv-widget-11 .ssv11-location svg{width:16px;height:16px;flex:0 0 auto;color:var(--blue)}
+#ssv-widget-11 h4{margin:0 0 18px !important;color:var(--navy);font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase !important;text-align:left !important}
+#ssv-widget-11 ul{list-style:none;margin:0 !important;padding:0 !important;display:flex !important;flex-direction:column !important;gap:12px}
+#ssv-widget-11 ul a{color:var(--muted);font-size:15px;text-decoration:none !important;font-weight:400}
+#ssv-widget-11 ul a:hover{color:var(--blue)}
+#ssv-widget-11 .ssv11-social{display:flex !important;gap:12px;margin-top:20px !important}
+#ssv-widget-11 .ssv11-social a{display:flex !important;align-items:center !important;justify-content:center !important;width:36px;height:36px;border-radius:50%;background:#EAF0F6;color:var(--blue);text-decoration:none !important}
+#ssv-widget-11 .ssv11-social a:hover{background:var(--blue);color:#fff}
+#ssv-widget-11 .ssv11-social svg{width:17px;height:17px}
+#ssv-widget-11 .ssv11-bottom{border-top:1px solid var(--line);padding-top:24px !important;display:flex !important;align-items:center !important;justify-content:space-between !important;flex-wrap:wrap;gap:12px}
+#ssv-widget-11 .ssv11-copy{color:var(--muted);font-size:13px;margin:0 !important;font-weight:400}
+#ssv-widget-11 .ssv11-legal-links{display:flex !important;gap:20px;list-style:none;margin:0 !important;padding:0 !important;flex-direction:row !important}
+#ssv-widget-11 .ssv11-legal-links a{color:var(--muted);font-size:13px;text-decoration:none !important;font-weight:400}
+#ssv-widget-11 .ssv11-legal-links a:hover{color:var(--blue)}
+@media(max-width:900px){#ssv-widget-11 .ssv11-top{grid-template-columns:1fr 1fr !important;gap:32px}}
+@media(max-width:900px){#ssv-widget-11 .ssv11-logo{height:64px}}
+@media(max-width:600px){#ssv-widget-11 .ssv11-top{grid-template-columns:1fr !important;gap:28px}#ssv-widget-11 .ssv11-wrap{padding:40px 0 24px !important}#ssv-widget-11 .ssv11-bottom{flex-direction:column !important;align-items:flex-start !important}#ssv-widget-11 .ssv11-logo{height:52px}}
 
 /* ===== Widget 12 — Seguros Complementarios ===== */
 #ssv-widget-12{--blue:#0076DF;--navy:#071A49;--muted:#5F6368;--line:#E5E7EB;background:#fff;color:var(--navy);font-family:Lato,Arial,sans-serif;padding:0 20px !important;text-align:left !important}
